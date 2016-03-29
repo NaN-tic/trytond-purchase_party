@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-# This file is part of purchase_party module for Tryton.
+# This file is part purchase_party module for Tryton.
 # The COPYRIGHT file at the top level of this repository contains
 # the full copyright notices and license terms.
+
 from setuptools import setup
 import re
 import os
@@ -18,7 +19,6 @@ def read(fname):
     return io.open(
         os.path.join(os.path.dirname(__file__), fname),
         'r', encoding='utf-8').read()
-
 
 def get_require_version(name):
     if minor_version % 2:
@@ -57,8 +57,7 @@ if minor_version % 2:
 
 setup(name=name,
     version=version,
-    description='Tryton module that allows to set automaticaly the currency '
-        'of the supplier in the new purchases.',
+    description='Tryton Purchase Party Module',
     long_description=read('README'),
     author='Zikzakmedia SL',
     author_email='zikzak@zikzakmedia.com',
